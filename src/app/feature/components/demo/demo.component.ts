@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-demo',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoComponent implements OnInit {
 
+  @Input()
+  demoValue: string;
+
+  @Output()
+  dispatchClick: EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onDispatchClick() {
+    this.dispatchClick.emit('Banana');
   }
 
 }

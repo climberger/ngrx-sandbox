@@ -1,5 +1,4 @@
-<p>
-  demo-container works!
-</p>
+<app-demo [demoValue]="demoValue$ | async"
+          (dispatchClick)="onDispatch($event)"
+></app-demo>
 
-<button (click)="dispatch()">dispatch</button>
