@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Store} from '@ngrx/store';
+import {InsertValue} from '../../state-management/actions';
+import {State} from '../../state-management/reducers';
 
 @Component({
   selector: 'app-demo-container',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store<State>) { }
 
   ngOnInit() {
+
+  }
+
+  dispatch() {
+    this.store.dispatch(new InsertValue('blumenkohl'));
   }
 
 }

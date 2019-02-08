@@ -20,7 +20,7 @@ import {FeatureRoutingModule} from './feature-routing.module';
     FeatureRoutingModule,
     NgrxFormsModule,
     // EffectsModule.forFeature([...featureStateManagement.effects]),
-    // StoreModule.forFeature('Feature', featureStateManagement.reducers)
+    StoreModule.forFeature(featureStateManagement.featureStateIdentifier, featureStateManagement.reducers)
   ],
   declarations: [
     ...featureDumbComponents.allDumbs,
