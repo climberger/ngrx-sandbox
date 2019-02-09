@@ -1,8 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {Store} from '@ngrx/store';
+
+import {Observable} from 'rxjs';
+
 import {InsertValue} from '../../state-management/actions';
 import {State} from '../../state-management/reducers';
-import {Observable} from 'rxjs';
 
 import * as demoSelectors from '../../state-management/selectors/demo.selectors';
 

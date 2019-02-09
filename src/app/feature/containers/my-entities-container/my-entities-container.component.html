@@ -1,0 +1,4 @@
+<app-my-entities [myEntities]="myEntities$ | async"
+                 (addEntity)="onAddEntity($event)"
+                 (deleteEntity)="onDeleteEntity($event)"
+></app-my-entities>

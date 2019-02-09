@@ -1,0 +1,9 @@
+<div class="flex">
+  <input type="text" #entityNameInput >
+  <button (click)="onAddEntity(entityNameInput.value)" >Add Entity</button>
+</div>
+
+<div class="flex" *ngFor="let entity of myEntities">
+  <div>Entity ID: {{entity.id}},  Entity Name: {{entity.name}}</div>
+  <button (click)="onDeleteEntity(entity.id)" >Delete Entity</button>
+</div>

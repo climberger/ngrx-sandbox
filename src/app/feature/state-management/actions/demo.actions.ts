@@ -3,7 +3,7 @@ import {Action} from '@ngrx/store';
 
 const namespace = 'DEMO:';
 
-export const INSERT_VALUE = namespace + 'INSERT_VALUE';
+export const INSERT_VALUE = 'INSERT_VALUE';
 
 export class InsertValue implements Action {
   readonly type = INSERT_VALUE;

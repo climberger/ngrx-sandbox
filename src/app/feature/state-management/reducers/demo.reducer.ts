@@ -7,7 +7,7 @@ export interface DemoState {
 
 export const initialState: DemoState = {
   demoValue: ''
-}
+};
 
 export function demoReducer(state = initialState, action: fromDemoActions.DemoAction): DemoState {
 

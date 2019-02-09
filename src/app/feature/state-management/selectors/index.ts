@@ -1,1 +1,2 @@
-export const dummyRemoveSoon = ''; // TODO: remove this, when serious exports are placed.
+export * from './demo.selectors';
+export * from './my-entities.selectors';
